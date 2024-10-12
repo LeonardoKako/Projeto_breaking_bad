@@ -1,0 +1,53 @@
+@use 'var';
+
+.personagens  {
+    width: 100%;
+    padding: 5vw;
+
+    .container {
+        width: 100%;
+        display: block;
+
+        &__item {
+            height: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+
+            img {
+                max-width: 300px;
+            }
+
+            .textos {
+                padding: 10px;
+
+                .title-lg {
+                text-align: center;
+                color: var.$laranja;
+                }
+
+                .text-sm {
+                text-align: center;
+                margin-top: -15px;
+                margin-bottom: 30px;
+                color: var.$laranja;
+                border-bottom: 2px solid var.$laranja;
+                padding-bottom: 5px;
+                } 
+
+                .text {
+                text-align: justify;
+                color: var.$laranja;
+                
+                }
+            }
+        }
+    }
+}
+
+.curiosidades {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
