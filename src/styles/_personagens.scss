@@ -4,27 +4,47 @@
     width: 100%;
     padding: 5vw;
 
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+
     .container {
         width: 100%;
         display: block;
 
         &__item {
-            height: 300px;
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             display: flex;
             flex-direction: row;
 
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &:nth-child(2), &:nth-child(4) {
+                @media (max-width: 768px) {
+                    flex-direction: column-reverse;
+                }
+            }
+
             img {
+                width: 100%;
                 max-width: 300px;
             }
 
             .textos {
                 padding: 10px;
 
-                .title-lg {
+                .title {
                 text-align: center;
                 color: var.$laranja;
+
+                @media (max-width: 768px) {
+                    font-size: 55px;
+                }
                 }
 
                 .text-sm {
@@ -40,14 +60,12 @@
                 text-align: justify;
                 color: var.$laranja;
                 
+                @media (max-width: 768px) {
+                    font-size: 17px;
+                    font-weight: 200;
+                }
                 }
             }
         }
     }
-}
-
-.curiosidades {
-    height: 100vh;
-    width: 100%;
-    background-color: aqua;
 }

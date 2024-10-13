@@ -10,9 +10,17 @@
     justify-content: space-between;
     position: fixed;
 
+    @media (max-width: 768px){
+        height: 70px;
+        padding: 8px 30px;
+    }
+
     .div-links {
         width: 100%;
-        margin-right: 20px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     .links {
         margin: 0 auto;
@@ -23,7 +31,7 @@
 
         &__item {
             margin-right: 25px;
-            transition: transform .2s ease;
+            transition: transform .5s ease;
 
             &:hover {
                 transform: scale(1.2);
@@ -35,11 +43,10 @@
                 font-size: 20px;
                 text-decoration: none;
                 font-weight: bold;
-                transition: margin .2s ease;
+                transition: color .5s ease;
 
                 &:hover {
-                    color: #393939;
-                    margin: 10px;
+                    color: #fff;
                 }
             }
         }
@@ -48,6 +55,10 @@
     .icon-heisenberg{
         margin-left: 20px;
 
+        @media (max-width: 768px){
+            margin-left: 0;
+        }
+
         &__svg {
             max-width: 50px;
         }
@@ -55,6 +66,10 @@
 
     .leonardo {
         min-width: 150px;
+
+        @media (max-width: 768px) {
+            min-width: 10px;
+        }
 
         p {
             text-align: center;

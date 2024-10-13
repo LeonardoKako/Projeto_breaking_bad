@@ -1,4 +1,5 @@
 @use 'var';
+@use 'sobre';
 @use 'header';
 @use 'personagens';
 
@@ -21,7 +22,7 @@ li {
 
 .text {
     font-family: 'Roboto Slab', sans serif;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
 }
 
@@ -40,7 +41,7 @@ li {
 .title {
     font-family: Breaking, sans serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 70px;
 }
 
 .title-sm {
@@ -52,7 +53,7 @@ li {
 .title-lg {
     font-family: Breaking, sans serif;
     font-weight: 500;
-    font-size: 70px;
+    font-size: 90px;
 }
 
 .flex {
@@ -68,7 +69,43 @@ body {
 .image-background {
     width: 100%;
     padding-top: 80px;
+
+    @media (max-width: 768px) {
+        padding-top: 70px;
+    }
     img {
         width: 100%;
     }
+}
+
+.trailer {
+    padding: 5vw;
+    flex-direction: column;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: var.$laranja;
+        border-bottom: 2px solid var.$laranja;
+
+        @media (max-width: 768px) {
+            font-size: 70px;
+        }
+    }
+
+    iframe {
+        width: 60%;
+        min-height: 500px;
+        padding: 3vw;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            min-height: 300px;
+        }
+    }
+}
+
+footer {
+    height: 80px;
+    background-color: var.$laranja;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/main.css">
-    <title>Olá Tudo bem</title>
+    <title>Leonardo Projeto Breaking Bad</title>
 </head>
 <body>
     <header class="header">
@@ -14,13 +14,13 @@
         <div class="div-links">
             <ul class="links">
                 <li class="links__item">
-                    <a class="text" href="">Sobre</a>
+                    <a class="text" href="#sobre">Sobre</a>
                 </li>
                 <li class="links__item">
-                    <a class="text" href="">Personagens</a>
+                    <a class="text" href="#personagens">Personagens</a>
                 </li>
                 <li class="links__item">
-                    <a class="text" href="">Curiosidades</a>
+                    <a class="text" href="#trailer">Trailer</a>
                 </li>
             </ul>
         </div>
@@ -29,46 +29,60 @@
             </div>
     </header>
     <section class="image-background">
-        <img src="./dist/images/heisenberg_capa_fundo.png" alt="Heisenberg">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/heisenberg_capa_celular.png">
+            <img src="./dist/images/heisenberg_capa_fundo.png" alt="Heisenberg">
+        </picture>
     </section>
-    <section class="personagens flex">
+    <section class="sobre flex" id="sobre">
+        <h1 class="title-lg">Breaking Bad</h1>
+        <div class="container flex">
+            <img src="./dist/images/sobre.png" alt="Breaking Bad">
+            <p class="text-lg ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, sequi ipsum. Quod, quia. Nisi saepe, fuga facilis illo omnis, ullam rem impedit repellat, iusto tenetur excepturi optio. Atque, reiciendis! Impedit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, sequi ipsum. Quod, quia. Nisi saepe, fuga facilis illo omnis, ullam rem impedit repellat, iusto tenetur excepturi optio. Atque, reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, velit, eveniet odit iure sapiente laudantium sunt quaerat dolor aut vero aliquid quod magnam esse placeat porro dolorum expedita debitis. Delectus.</p>
+        </div>
+    </section>
+    <section class="personagens flex" id="personagens">
         <div class="container">
             <div class="container__item">
-                <img src="https://picsum.photos/id/1/300/300" alt="">
+                <img src="./dist/images/ww.png" alt="Walter White">
                 <div class="textos">
-                    <p class="title-lg">Walter White</p>
+                    <p class="title">Walter White</p>
                     <p class="text-sm">(Bryan Craynston)</p>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis. Architecto, maxime esse! Iure doloribus consequatur obcaecati assumenda. consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis</p>
                 </div>
             </div>
             <div class="container__item">
                 <div class="textos">
-                    <p class="title-lg">Walter White</p>
-                    <p class="text-sm">(Bryan Craynston)</p>
+                    <p class="title">Jesse Pinkman</p>
+                    <p class="text-sm">(Aaron Paul)</p>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis. Architecto, maxime esse! Iure doloribus consequatur obcaecati assumenda. consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis</p>
                 </div>
-                <img src="https://picsum.photos/id/1/300/300" alt="">
+                <img src="./dist/images/jp.png" alt="Jesse Pinkman">
             </div>
             <div class="container__item">
-                <img src="https://picsum.photos/id/1/300/300" alt="">
+                <img src="./dist/images/gf.png" alt="Gustavo Fring">
                 <div class="textos">
-                    <p class="title-lg">Walter White</p>
-                    <p class="text-sm">(Bryan Craynston)</p>
+                    <p class="title">Gustavo Fring</p>
+                    <p class="text-sm">(Giancarlo Esposito)</p>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis. Architecto, maxime esse! Iure doloribus consequatur obcaecati assumenda. consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis</p>
                 </div>
             </div>
             <div class="container__item">
                 <div class="textos">
-                    <p class="title-lg">Walter White</p>
-                    <p class="text-sm">(Bryan Craynston)</p>
+                    <p class="title">Saul Goodman</p>
+                    <p class="text-sm">(Bob Odenkirk)</p>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis. Architecto, maxime esse! Iure doloribus consequatur obcaecati assumenda. consectetur adipisicing elit. Quam excepturi nulla totam eligendi cum, suscipit autem perspiciatis porro dolorem nemo nobis omnis</p>
                 </div>
-                <img src="https://picsum.photos/id/1/300/300" alt="">
+                <img src="./dist/images/sg.png" alt="Saul Goodman">
             </div>
         </div>
     </section>
-    <section class="curiosidades">
-        
+    <section class="trailer flex" id="trailer">
+        <h1 class="title-lg">Trailer</h1>
+        <iframe src="https://www.youtube.com/embed/HhesaQXLuRY" frameborder="0"></iframe>
     </section>
+    <footer class="footer flex">
+        <p class="text-sm">©Leonardo</p>
+    </footer>
 </body>
 </html>

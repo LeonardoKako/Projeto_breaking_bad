@@ -1,0 +1,44 @@
+@use 'var';
+
+.sobre {
+    width: 100%;
+    padding: 5vw;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: var.$laranja;
+        border-bottom: 2px solid var.$laranja;
+
+        @media (max-width: 768px) {
+            font-size: 60px;
+            margin-bottom: 6vw;
+        }
+    }
+
+    .container {
+        flex-direction: column;
+        
+        img {
+            width: 100%;
+            padding: 3vw;
+        }
+
+        p {
+            text-align: justify;
+            color: var.$laranja;
+            font-weight: 300;
+
+            @media (max-width: 768px) {
+                font-size: 17px;
+                font-weight: 200;
+                margin-top: 6vw;
+            }
+        }
+    }
+}
